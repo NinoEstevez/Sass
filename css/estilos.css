@@ -13,12 +13,10 @@
   grid-gap: 5px; }
   .contenedor header {
     display: flex;
-    background-color: white;
     width: 100%;
     grid-area: navbar;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: solid 3px #e0e0e0; }
+    align-items: center; }
     .contenedor header .imagen-header img {
       display: flex;
       width: 100%; }
@@ -28,28 +26,15 @@
       height: 100%;
       width: 80vw;
       align-items: center;
-      list-style: none;
-      color: #474747;
-      font-size: 1.9vw;
-      font-weight: 700;
-      font-family: 'Anek Malayalam', sans-serif; }
+      list-style: none; }
       .contenedor header .lista-header li {
         padding: 25px;
         padding-top: 10px;
         padding-bottom: 10px;
-        box-shadow: #e7e7e7 1px 1px;
-        border-radius: 1px;
-        border: solid 1px white;
         transition: all 0.3s; }
         .contenedor header .lista-header li:hover {
-          background-color: #ffffffce;
-          box-shadow: 3px 3px  #ffc9bc;
-          border: 1px solid #e9e4e4;
           padding-top: 17px;
           padding-bottom: 17px; }
-      .contenedor header .lista-header a {
-        text-decoration: none;
-        color: #474747; }
 
 @keyframes animacion {
   0% {
@@ -58,24 +43,16 @@
     opacity: 100; } }
   .contenedor .seccion1 {
     display: flex;
-    background-color: #cfa67d;
-    color: white;
     grid-area: seccion1;
     width: 100%;
     padding-top: 40%;
     justify-content: center;
     text-decoration: none;
-    font-size: 6.5vw;
-    font-family: 'Lobster Two', cursive;
     animation-name: animacion;
     animation-duration: 0.7s;
     animation-delay: 0s; }
-    .contenedor .seccion1:hover {
-      background-color: #997a5a; }
   .contenedor .seccion2 {
     display: flex;
-    background-color: #ffbc9d;
-    color: white;
     grid-area: seccion2;
     width: 100%;
     padding-top: 33%;
@@ -83,38 +60,87 @@
     align-content: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 5.5vw;
-    font-family: 'Lobster Two', cursive;
     animation-name: animacion;
     animation-duration: 0.7s;
     animation-delay: 0s; }
-    .contenedor .seccion2:hover {
-      background-color: #e28d66; }
   .contenedor .seccion3 {
     display: flex;
-    background-color: #E5D2C4;
-    color: white;
     grid-area: seccion3;
     width: 100%;
     padding-top: 43%;
     justify-content: center;
     text-decoration: none;
-    font-size: 5.8vw;
-    font-family: 'Lobster Two', cursive;
     animation-name: animacion;
     animation-duration: 0.7s;
     animation-delay: 0s; }
-    .contenedor .seccion3:hover {
-      background-color: #9b8b80; }
   .contenedor footer {
     display: flex;
-    background-color: #181a1b;
-    color: beige;
     grid-area: pie;
     width: 100%;
     align-items: center;
     justify-content: center;
     height: 7.7vh; }
+
+.contenedor header .lista-header {
+  font-size: 1.9vw;
+  font-weight: 700;
+  font-family: 'Anek Malayalam', sans-serif; }
+
+.contenedor .seccion1 {
+  font-size: 6.5vw;
+  font-family: 'Lobster Two', cursive; }
+
+.contenedor .seccion2 {
+  font-size: 5.5vw;
+  font-family: 'Lobster Two', cursive; }
+
+.contenedor .seccion3 {
+  font-size: 5.8vw;
+  font-family: 'Lobster Two', cursive; }
+
+.contenedor header {
+  background-color: white;
+  border-bottom: solid 3px #e0e0e0; }
+  .contenedor header .lista-header {
+    list-style: none;
+    color: #474747; }
+    .contenedor header .lista-header li {
+      box-shadow: #e7e7e7 1px 1px;
+      border-radius: 1px;
+      border: solid 1px white;
+      transition: all 0.3s; }
+      .contenedor header .lista-header li:hover {
+        background-color: #ffffffce;
+        box-shadow: 3px 3px  #ffc9bc;
+        border: 1px solid #e9e4e4; }
+    .contenedor header .lista-header a {
+      text-decoration: none;
+      color: #474747; }
+
+.contenedor .seccion1 {
+  background-color: #cfa67d;
+  color: white;
+  text-decoration: none; }
+  .contenedor .seccion1:hover {
+    background-color: #997a5a; }
+
+.contenedor .seccion2 {
+  background-color: #ffbc9d;
+  color: white;
+  text-decoration: none; }
+  .contenedor .seccion2:hover {
+    background-color: #e28d66; }
+
+.contenedor .seccion3 {
+  background-color: #E5D2C4;
+  color: white;
+  text-decoration: none; }
+  .contenedor .seccion3:hover {
+    background-color: #9b8b80; }
+
+.contenedor footer {
+  background-color: #181a1b;
+  color: beige; }
 
 .contenedor-store {
   display: grid;
