@@ -59,6 +59,7 @@
     padding-left: 6%;
     align-content: center;
     justify-content: center;
+    justify-items: center;
     text-decoration: none;
     animation-name: animacion;
     animation-duration: 0.7s;
@@ -81,67 +82,6 @@
     justify-content: center;
     height: 7.7vh; }
 
-.contenedor header .lista-header {
-  font-size: 1.9vw;
-  font-weight: 700;
-  font-family: 'Anek Malayalam', sans-serif; }
-
-.contenedor .seccion1 {
-  font-size: 6.5vw;
-  font-family: 'Lobster Two', cursive; }
-
-.contenedor .seccion2 {
-  font-size: 5.5vw;
-  font-family: 'Lobster Two', cursive; }
-
-.contenedor .seccion3 {
-  font-size: 5.8vw;
-  font-family: 'Lobster Two', cursive; }
-
-.contenedor header {
-  background-color: white;
-  border-bottom: solid 3px #e0e0e0; }
-  .contenedor header .lista-header {
-    list-style: none;
-    color: #474747; }
-    .contenedor header .lista-header li {
-      box-shadow: #e7e7e7 1px 1px;
-      border-radius: 1px;
-      border: solid 1px white;
-      transition: all 0.3s; }
-      .contenedor header .lista-header li:hover {
-        background-color: #ffffffce;
-        box-shadow: 3px 3px  #ffc9bc;
-        border: 1px solid #e9e4e4; }
-    .contenedor header .lista-header a {
-      text-decoration: none;
-      color: #474747; }
-
-.contenedor .seccion1 {
-  background-color: #cfa67d;
-  color: white;
-  text-decoration: none; }
-  .contenedor .seccion1:hover {
-    background-color: #997a5a; }
-
-.contenedor .seccion2 {
-  background-color: #ffbc9d;
-  color: white;
-  text-decoration: none; }
-  .contenedor .seccion2:hover {
-    background-color: #e28d66; }
-
-.contenedor .seccion3 {
-  background-color: #E5D2C4;
-  color: white;
-  text-decoration: none; }
-  .contenedor .seccion3:hover {
-    background-color: #9b8b80; }
-
-.contenedor footer {
-  background-color: #181a1b;
-  color: beige; }
-
 .contenedor-store {
   display: grid;
   grid-template-areas: "navbar navbar navbar" "filtros buscador publicidad" "filtros productos publicidad" "pie pie pie";
@@ -149,27 +89,103 @@
   grid-template-rows: 2fr 1fr 10fr 1fr;
   width: 100%;
   height: 100%;
-  grid-gap: 2px;
+  grid-gap: 2px; }
+  .contenedor-store header {
+    grid-area: navbar; }
+  .contenedor-store .productos {
+    grid-area: productos; }
+  .contenedor-store .publicidad {
+    grid-area: publicidad; }
+  .contenedor-store .filtros {
+    grid-area: filtros; }
+  .contenedor-store .buscador {
+    grid-area: buscador; }
+  .contenedor-store footer {
+    grid-area: pie; }
+
+.contenedor header .lista-header {
+  font-size: 1.9vw;
+  font-weight: 700;
+  font-family: "Anek Malayalam", sans-serif; }
+
+.contenedor .seccion1 {
+  font-size: 6.5vw;
+  font-family: "Lobster Two", cursive; }
+
+.contenedor .seccion2 {
+  font-size: 5.5vw;
+  font-family: "Lobster Two", cursive; }
+
+.contenedor .seccion3 {
+  font-size: 5.8vw;
+  font-family: "Lobster Two", cursive; }
+
+.contenedor {
+  background-image: url(/images/fondo.png);
+  background-repeat: repeat-y;
+  background-size: 100%; }
+  .contenedor header {
+    background-color: white;
+    border-bottom: solid 3px #e0e0e0;
+    opacity: 90%; }
+    .contenedor header .lista-header {
+      list-style: none;
+      color: #474747;
+      opacity: 100%; }
+      .contenedor header .lista-header li {
+        box-shadow: #e7e7e7 1px 1px;
+        border-radius: 1px;
+        border: solid 1px white;
+        transition: all 0.3s; }
+        .contenedor header .lista-header li:hover {
+          background-color: #ffffffce;
+          box-shadow: 3px 3px  #ffc9bc;
+          border: 1px solid #e9e4e4; }
+      .contenedor header .lista-header a {
+        text-decoration: none;
+        color: #474747; }
+  .contenedor .seccion1 {
+    background-color: #cfa67d;
+    color: white;
+    text-decoration: none;
+    opacity: 90%;
+    box-shadow: inset 4px 4px 6px #997a5a; }
+    .contenedor .seccion1:hover {
+      background-color: #997a5a; }
+  .contenedor .seccion2 {
+    background-color: #ffbc9d;
+    color: white;
+    text-decoration: none;
+    opacity: 90%;
+    box-shadow: inset 4px 4px 6px #e28d66; }
+    .contenedor .seccion2:hover {
+      background-color: #e28d66; }
+  .contenedor .seccion3 {
+    background-color: #E5D2C4;
+    color: white;
+    text-decoration: none;
+    opacity: 90%; }
+    .contenedor .seccion3:hover {
+      background-color: #9b8b80; }
+  .contenedor footer {
+    background-color: #181a1b;
+    color: #E5D2C4; }
+
+.contenedor-store {
   background-color: white; }
   .contenedor-store header {
     background-color: white;
-    border: solid 2px black;
-    grid-area: navbar; }
+    border: solid 2px black; }
   .contenedor-store .productos {
-    grid-area: productos;
     border: solid 2px black;
     background-color: #ffffffe8; }
   .contenedor-store .publicidad {
-    grid-area: publicidad;
     border: solid 2px black; }
   .contenedor-store .filtros {
-    grid-area: filtros;
     background-color: white;
     border: solid 2px black; }
   .contenedor-store .buscador {
-    grid-area: buscador;
     background-color: #b3a9a9;
     border: solid 2px black; }
   .contenedor-store footer {
-    grid-area: pie;
     border: solid 2px black; }

@@ -1,3 +1,6 @@
+$lobster: 'Lobster Two', cursive;
+$anek: 'Anek Malayalam', sans-serif;
+
 .contenedor {
 
     header {
@@ -6,7 +9,7 @@
 
             font-size: 1.9vw;
             font-weight: 700;
-            font-family: 'Anek Malayalam', sans-serif;
+            font-family: $anek;
 
         
         }
@@ -15,7 +18,7 @@
         .seccion1 {
 
             font-size: 6.5vw;
-            font-family: 'Lobster Two', cursive;
+            font-family: $lobster;
         
         }
 
@@ -23,13 +26,13 @@
         .seccion2 {
 
             font-size: 5.5vw;
-            font-family: 'Lobster Two', cursive;
+            font-family: $lobster;
 
         }
             .seccion3 {
 
                 font-size: 5.8vw;
-                font-family: 'Lobster Two', cursive;
+                font-family: $lobster;
 
 
             }
