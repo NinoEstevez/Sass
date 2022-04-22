@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Cinzel&family=Lobster+Two&family=Monoton&family=Noticia+Text&family=Righteous&display=swap" rel="stylesheet">
-    <title>Zafiro Diseño</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Cinzel&family=Josefin+Sans&family=Lobster+Two&family=Monoton&family=Mulish:wght@300&family=Noticia+Text&family=PT+Sans&family=Righteous&family=Roboto+Slab:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
     <div class="contenedor-store">
@@ -16,12 +17,15 @@
             <nav>
                 <ul class="lista-header">
                     <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/assets/pages/store.html">Store</a></li>
-                    <li id="li-nosotras">Nosotras</li>
+                    <li><a href="/pages/store.html">Store</a></li>
+                    <li>Nosotras</li>
                     <li>Ofertas</li>
                     <li>Contacto</li>
                 </ul>
-            </nav>        
+            </nav>
+            <div class="imagen-header">
+                <img src="/images/zafiro_logo.png" alt="">
+            </div>       
         </header>
         <div class="filtros">
             <p>Categorías</p>
@@ -33,20 +37,123 @@
                 <li><a href="">Pilusos y Gorros</a> </li>
                 <li><a href="">Otros</a> </li>
             </ul>
+            <ul class="list-group list-group-flush" id="filtros">
+               <div class="input-group">
+                    <label for="inputGroupSelect04" class="form-label" style="padding-left: 22px;">Color</label>
+                    <select class="form-select w-75 mb-4 bg-dark text-light" id="inputGroupSelect04" aria-label="Example select with button addon" style="padding-left: 22px; margin-left: 22px;">
+            
+                      <option selected></option>
+                      <option value="1">Azul</option>
+                      <option value="2">Marron</option>
+                      <option value="3">Reptil</option>
+                      <option value="4">Verde</option>
+                      <option value="5">Beige</option>
+                      <option value="6">Negro</option>
+                      <option value="7">Amarillo</option>
+                      <option value="8">Rojo</option>
+                      <option value="9">Morado</option>
+                      <option value="10">Transparente</option>
+                    </select>
+                  </div>
+                <label for="customRange3" class="form-label"  style="padding-left: 22px;">Precio máximo</label>
+                    <input type="range" class="form-range bg-dark text-light w-75" min="0" max="5" step="0.5" id="customRange3"  style="margin-left: 22px;">
+                <h6 style="font-size: 18px; margin-left: 27px; margin-top: 7px;">$1000 - $1500 - $2500 - MAX</h6>
+                             
+                <button class="btn btn-outline-secondary w-75 text-light" type="button" style="margin-left: 22px; margin-top: 15px;">Filtrar</button>
+            </ul>
         </div>
+        
         <div class="buscador">
-  buscador
+                <img src="/images/lupa.png" alt="">
+                <input type="text" placeholder="  Buscar un producto por su nombre...">
         </div>
         <div class="productos">
-           
-                <h3>Riñonera Camel</h3>
-           
-                <h3>Riñonera Escarlata</h3>
-              
-           
+            <div class="productos-header">
+                <h4>Lo más vendido</h4>
+                <div class="input-group  w-100">
+                    <button class="btn btn-outline-secondary text-light bg-dark" type="button" style="border: 1px solid #474747;">Ordenar</button>
+                    <select class="form-select w-75 text-light" style="font-family:'Mulish'; font-size: 16px; background-color: rgb(20, 20, 20); border: 1px solid #474747;" id="inputGroupSelect03" aria-label="Example select with button addon">
+                      <option selected> de más a menos vendido</option>
+                      <option value="1"> de más a menos vendido</option>
+                      <option value="2"> de más a menos caro</option>
+                      <option value="3"> de más a menos nuevo</option>
+                    </select>
+                  </div>
+            </div>
+           <div class="productos-carta">
+            <img src="/images/minibag-negra.png" alt="">
+            <h4>Minibag Negra</h4>
+            <p>Otros</p>
+            <p>$1.200</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/gorro-rojo.png" alt="">
+            <h4>Piluso Rojo</h4>
+            <p>Pilusos</p>
+            <p>$1.200</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/billetera-amarilla.png" alt="">
+            <h4>Billetera Yellow</h4>
+            <p>Billeteras</p>
+            <p>$1.200</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/rinonera-marron-2.png" alt="">
+            <h4>Riñonera Camel</h4>
+            <p>Riñoneras</p>
+            <p>$2.300</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/neceser-reptil.png" alt="">
+            <h4>Neceser Reptil</h4>
+            <p>Neceseres</p>
+            <p>$2.000</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/cartera roja.png" alt="">
+            <h4>Cartera Roja</h4>
+            <p>Carteras</p>
+            <p>$3.200</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/minibag-negra.png" alt="">
+            <h4>Minibag Negra</h4>
+            <p>Otros</p>
+            <p>$1200</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/minibag-negra.png" alt="">
+            <h4>Minibag Negra</h4>
+            <p>Otros</p>
+            <p>$1200</p>
+           </div>
+           <div class="productos-carta">
+            <img src="/images/minibag-negra.png" alt="">
+            <h4>Minibag Negra</h4>
+            <p>Otros</p>
+            <p>$1200</p>
+           </div>
+           <nav aria-label="..." style="margin-top: 15px;">
+            <ul class="pagination bg-dark text-light" style="border: 1px solid #474747;">
+              <li class="page-item disabled bg-dark" >
+                <span class="page-link  bg-black text-light bg-dark" style="border: 1px solid #474747;">Previous</span>
+              </li>
+              <li class="page-item active"><a class="page-link border border-dark" href="#" style="border: 1px solid #474747;">1</a></li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link  bg-dark text-light" href="#" style="border: 1px solid #474747;">2</a>
+              </li>
+              <li class="page-item"><a class="page-link  bg-dark text-light" href="#" style="border: 1px solid #474747;">3</a></li>
+              <li class="page-item">
+                <a class="page-link  bg-dark text-light" href="#" style="border: 1px solid #474747;">Next</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="publicidad">
-            <a href="https://www.nike.com.ar"> nike </a>
+            <a href="https://www.nike.com.ar"> <img src="/images/publi.png" alt=""></a>    
+            <a href="https://www.nike.com.ar"> <img src="/images/publi.png" alt=""></a> 
+            
         </div>
      
         <footer>
@@ -54,5 +161,12 @@
      </footer>
     </div>
     
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
+
+
 </html>

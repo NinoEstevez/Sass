@@ -2,12 +2,18 @@ $color1: #474747;
 $detalles: #e0e0e0;
 $fondo1: white;
 $fondoOscuro: rgb(20, 20, 20);
+$fot: rgba(20, 20, 20, 0.815);
+$f1t: #474747ce;
 
 $sombra: #e7e7e7;
 
 $marron: #cfa67d;
 $rosa: #ffbc9d; 
 $nude: #E5D2C4;
+
+$marronT: #cfa67dda;
+$rosaT: #ffbc9dce; 
+$nudeT: #e5d2c4dc;
 
 .contenedor {
 
@@ -17,29 +23,28 @@ $nude: #E5D2C4;
 
     header {
 
-        background-color: $fondo1;
+        background-color: rgba(255, 255, 255, 0.85);
         border-bottom: solid 3px $detalles;
-        opacity: 90%;
 
 
         .lista-header {
 
             list-style: none;
             color: $color1;
-            opacity: 100%;
+
 
             li {
 
-                box-shadow: $sombra 1px 1px;
+                box-shadow: $sombra 2px 2px;
                 border-radius: 1px;
-                border: solid 1px white;
+                background-color: rgba(255, 255, 255, 0.538);
                 transition: all 0.3s;
                 
                 &:hover {
 
                     background-color: #ffffffce; 
                     box-shadow: 3px 3px  #ffc9bc ;
-                    border: 1px solid rgb(233, 228, 228);
+                    
 
                 
                 }
@@ -57,15 +62,16 @@ $nude: #E5D2C4;
 
         .seccion1 {
 
-            background-color: $marron;
+            background-color: $marronT;
             color: white;
             text-decoration: none;
-            opacity: 90%;
-            box-shadow: inset 4px 4px 6px #997a5a ;
+            border-radius: 5px;
+            transition: all 0.3s;
+
 
             &:hover {
 
-                background-color: #997a5a;
+                background-color: $marron;
             
             }
         
@@ -74,29 +80,31 @@ $nude: #E5D2C4;
 
         .seccion2 {
 
-            background-color:  $rosa;
+            background-color: $f1t;
             color: white;
             text-decoration: none;
-            opacity: 90%;
-            box-shadow: inset 4px 4px 6px #e28d66 ;
+            border-radius: 5px;
+            transition: all 0.3s;
+
 
             &:hover {
 
-                background-color: #e28d66;
+                background-color: $rosa;
             
             }
         }
             .seccion3 {
              
-                background-color: $nude;
+                background-color: $f1t;
                 color: white;           
                 text-decoration: none;
-                opacity: 90%;
+                border-radius: 5px;
+                transition: all 0.3s;
 
             
                 &:hover {
 
-                    background-color: #9b8b80;
+                    background-color: $nude;
                 
                 }
             }
@@ -104,7 +112,7 @@ $nude: #E5D2C4;
     
 
     footer {
-        background-color: #181a1b;;
+        background-color: #181a1b;
         color: $nude;
 
     
@@ -115,50 +123,103 @@ $nude: #E5D2C4;
 
 .contenedor-store {
 
-    background-color: white;
+    background-color: #181a1b;
 
     header {
-        background-color: white;
-        border: solid 2px black;
+
+        background-color: rgb(255, 255, 255);
+        border-bottom: solid 3px $detalles;
 
 
+        .lista-header {
+
+            list-style: none;
+            color: $color1;
+
+
+            li {
+
+                box-shadow: $sombra 2px 2px;
+                border-radius: 1px;
+                background-color: rgba(255, 255, 255, 0.538);
+                transition: all 0.3s;
+                
+                &:hover {
+
+                    background-color: #ffffffce; 
+                    box-shadow: 3px 3px  #ffc9bc ;
+                    
+
+                
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                color: $color1;
+            
+            }
         
+        }
     }
 
     .productos {
 
-        border: solid 2px black;
-        background-color: #ffffffe8;
+        background-color:#181a1b;
+
+        .productos-carta {
+
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+
+        }
+
     }
-    
     
     .publicidad {
 
-        border: solid 2px black;
+      background-color: rgb(58, 143, 212);
     }
-    
-    
+     
     .filtros {
 
-        background-color:white;
-        border: solid 2px black;
+        background-color:#181a1b;
+        color: white;
+
+        ul{
+
+            a {
+            color: white;
+              }
+        }
     }
     
     .buscador {
     
-        background-color: #b3a9a9;
-        border: solid 2px black;
-    
-    }
-    
-    
-    
-
-    footer {
+        background-color: #181a1b;
+        // border-bottom: 1px solid black;
         
-        border: solid 2px black;
+        input {
+
+            background-color: #111213;
+            color: white;
+            border-radius: 3px;
+            border: 1px solid #474747;
+
+        }
+    }
+
+ 
+    footer {
+        background-color: #0d0d0e;;
+        color: $nude;
+        
+
     
     
     }
 
 }
+

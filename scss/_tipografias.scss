@@ -1,5 +1,6 @@
 $lobster: 'Lobster Two', cursive;
 $anek: 'Anek Malayalam', sans-serif;
+$mulish: 'Mulish', cursive;
 
 .contenedor {
 
@@ -17,25 +18,120 @@ $anek: 'Anek Malayalam', sans-serif;
 
         .seccion1 {
 
-            font-size: 6.5vw;
-            font-family: $lobster;
+            font-size: 5vw;
+            font-family: $mulish;
+            text-shadow: 2px 2px silver;
+
         
         }
 
 
         .seccion2 {
 
-            font-size: 5.5vw;
-            font-family: $lobster;
+            font-size: 3.5vw;
+            font-family: $mulish;
+            text-shadow: 2px 2px silver;
+
 
         }
             .seccion3 {
 
-                font-size: 5.8vw;
-                font-family: $lobster;
+                font-size: 4vw;
+                font-family: $mulish;
+                text-shadow: 2px 2px silver;
 
 
             }
         
 
+}
+
+.contenedor-store {
+
+
+    header {
+
+        .lista-header {
+
+            font-size: 1.9vw;
+            font-weight: 700;
+            font-family: $anek;
+
+        
+        }
+    }
+        
+    
+    .productos {
+
+        .productos-header {
+
+            h4 {
+
+            font-family: $anek;
+            font-size: 26px;
+            color: white;
+            font-weight: bolder;
+
+        }
+
+        }
+
+        .productos-carta {
+
+            h4 {
+
+                font-family: $mulish;
+                font-weight: 19px;
+
+            }
+
+            p {
+
+                font-family: $mulish;
+                font-weight: 10px;
+
+                
+
+            }
+
+        }
+    
+        
+            }    
+
+    .publicidad {
+        grid-area: publicidad; }
+
+    .filtros {
+        
+        p {
+            font-family: $anek;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        ul {
+
+            font-family: $anek;
+            font-size: 18px; 
+                li {
+                        &:hover {
+                         font-weight: 800;
+                                             }
+                }
+
+                a {
+                    text-decoration: none;   
+                }
+            }
+    }
+
+    .buscador {
+        grid-area: buscador; }
+
+    footer {
+        grid-area: pie;
+    
+            }
 }
