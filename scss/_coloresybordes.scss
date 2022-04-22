@@ -1,0 +1,225 @@
+$color1: #474747;
+$detalles: #e0e0e0;
+$fondo1: white;
+$fondoOscuro: rgb(20, 20, 20);
+$fot: rgba(20, 20, 20, 0.815);
+$f1t: #474747ce;
+
+$sombra: #e7e7e7;
+
+$marron: #cfa67d;
+$rosa: #ffbc9d; 
+$nude: #E5D2C4;
+
+$marronT: #cfa67dda;
+$rosaT: #ffbc9dce; 
+$nudeT: #e5d2c4dc;
+
+.contenedor {
+
+    background-image: url(/images/fondo.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+
+    header {
+
+        background-color: rgba(255, 255, 255, 0.85);
+        border-bottom: solid 3px $detalles;
+
+
+        .lista-header {
+
+            list-style: none;
+            color: $color1;
+
+
+            li {
+
+                box-shadow: $sombra 2px 2px;
+                border-radius: 1px;
+                background-color: rgba(255, 255, 255, 0.538);
+                transition: all 0.3s;
+                
+                &:hover {
+
+                    background-color: #ffffffce; 
+                    box-shadow: 3px 3px  #ffc9bc ;
+                    
+
+                
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                color: $color1;
+            
+            }
+        
+        }
+    }
+
+        .seccion1 {
+
+            background-color: $marronT;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+
+
+            &:hover {
+
+                background-color: $marron;
+            
+            }
+        
+        }
+
+
+        .seccion2 {
+
+            background-color: $f1t;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+
+
+            &:hover {
+
+                background-color: $rosa;
+            
+            }
+        }
+            .seccion3 {
+             
+                background-color: $f1t;
+                color: white;           
+                text-decoration: none;
+                border-radius: 5px;
+                transition: all 0.3s;
+
+            
+                &:hover {
+
+                    background-color: $nude;
+                
+                }
+            }
+        
+    
+
+    footer {
+        background-color: #181a1b;
+        color: $nude;
+
+    
+    
+    }
+
+}
+
+.contenedor-store {
+
+    background-color: #181a1b;
+
+    header {
+
+        background-color: rgb(255, 255, 255);
+        border-bottom: solid 3px $detalles;
+
+
+        .lista-header {
+
+            list-style: none;
+            color: $color1;
+
+
+            li {
+
+                box-shadow: $sombra 2px 2px;
+                border-radius: 1px;
+                background-color: rgba(255, 255, 255, 0.538);
+                transition: all 0.3s;
+                
+                &:hover {
+
+                    background-color: #ffffffce; 
+                    box-shadow: 3px 3px  #ffc9bc ;
+                    
+
+                
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                color: $color1;
+            
+            }
+        
+        }
+    }
+
+    .productos {
+
+        background-color:#181a1b;
+
+        .productos-carta {
+
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+
+        }
+
+    }
+    
+    .publicidad {
+
+      background-color: rgb(58, 143, 212);
+    }
+     
+    .filtros {
+
+        background-color:#181a1b;
+        color: white;
+
+        ul{
+
+            a {
+            color: white;
+              }
+        }
+    }
+    
+    .buscador {
+    
+        background-color: #181a1b;
+        // border-bottom: 1px solid black;
+        
+        input {
+
+            background-color: #111213;
+            color: white;
+            border-radius: 3px;
+            border: 1px solid #474747;
+
+        }
+    }
+
+ 
+    footer {
+        background-color: #0d0d0e;;
+        color: $nude;
+        
+
+    
+    
+    }
+
+}
+
