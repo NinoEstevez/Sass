@@ -6,11 +6,12 @@
 
     grid-template-areas: 
     "navbar navbar navbar navbar"
+    "encabezado encabezado encabezado encabezado"
     "espacio1 seccion1 seccion1 espacio2"
     "espacio1 seccion2 seccion3 espacio2"
     "pie pie pie pie";
     grid-template-columns: 1fr 5fr 5fr 1fr;
-    grid-template-rows: 2fr 5fr 5fr 1fr;
+    grid-template-rows: 2fr 1.5fr 5fr 5fr 1fr;
     width: 100%;
     height: 100vh;
     grid-gap: 5px;
@@ -56,6 +57,17 @@
         
         }
     }
+
+    h1 {
+
+        grid-area: encabezado;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding-left: 20px;
+
+    }
+
 
     @keyframes animacion {
 
@@ -143,11 +155,12 @@
 .contenedor-store {
     display: grid;
     grid-template-areas: "navbar navbar navbar"
+    "h1 h1 h1"
    "filtros buscador publicidad"
    "filtros productos publicidad"
    "pie pie pie";
     grid-template-columns: 4fr 10fr 2fr;
-    grid-template-rows: 17vh 10vh auto auto;
+    grid-template-rows: 17vh 12vh 10vh auto auto;
     width: 100%;
     height: 100%;
     grid-gap: 0px;
@@ -197,6 +210,15 @@
             }
         } 
     
+        h1 {
+
+        display: flex;
+        grid-area: h1;
+        justify-items: center;
+        align-items: center;
+
+        }
+
     .productos {
         grid-area: productos;
         display: flex;
@@ -363,7 +385,9 @@
         grid-gap: 0px;
         
         
-       
+       h1 {
+           display: none;
+       }
 
         footer {
             display: none;

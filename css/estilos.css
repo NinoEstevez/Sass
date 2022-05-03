@@ -8,17 +8,20 @@
   font-weight: 700;
   font-family: "Anek Malayalam", sans-serif; }
 
+.contenedor h1 {
+  font-family: "Anek Malayalam", sans-serif; }
+
 .contenedor .seccion1 {
   font-size: 5vw;
   font-family: "Mulish", cursive;
   text-shadow: 2px 2px silver; }
 
-.contenedor .seccion2 {
+.contenedor .seccion2, .contenedor .seccion2-m {
   font-size: 3.5vw;
   font-family: "Mulish", cursive;
   text-shadow: 2px 2px silver; }
 
-.contenedor .seccion3 {
+.contenedor .seccion3, .contenedor .seccion3-m {
   font-size: 4vw;
   font-family: "Mulish", cursive;
   text-shadow: 2px 2px silver; }
@@ -27,6 +30,12 @@
   font-size: 1.9vw;
   font-weight: 700;
   font-family: "Anek Malayalam", sans-serif; }
+
+.contenedor-store h1 {
+  color: white;
+  font-family: "Anek Malayalam", sans-serif;
+  padding-left: 20px;
+  font-size: x-large; }
 
 .contenedor-store .productos .productos-header h4 {
   font-family: "Anek Malayalam", sans-serif;
@@ -85,30 +94,36 @@
       .contenedor header .lista-header a {
         text-decoration: none;
         color: #474747; }
+  .contenedor h1 {
+    background-color: rgba(255, 255, 255, 0.85); }
   .contenedor .seccion1 {
     background-color: #cfa67dda;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: all 0.3s; }
     .contenedor .seccion1:hover {
       background-color: #cfa67d; }
-  .contenedor .seccion2 {
+  .contenedor .seccion2, .contenedor .seccion2-m {
     background-color: #474747ce;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: all 0.3s; }
-    .contenedor .seccion2:hover {
+    .contenedor .seccion2:hover, .contenedor .seccion2-m:hover {
       background-color: #ffbc9d; }
-  .contenedor .seccion3 {
+  .contenedor .seccion2-m:hover {
+    background-color: #181a1b; }
+  .contenedor .seccion3, .contenedor .seccion3-m {
     background-color: #474747ce;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: all 0.3s; }
-    .contenedor .seccion3:hover {
+    .contenedor .seccion3:hover, .contenedor .seccion3-m:hover {
       background-color: #E5D2C4; }
+  .contenedor .seccion3-m:hover {
+    background-color: #181a1b; }
   .contenedor footer {
     background-color: #181a1b;
     color: #E5D2C4; }
@@ -132,6 +147,9 @@
       .contenedor-store header .lista-header a {
         text-decoration: none;
         color: #474747; }
+  .contenedor-store h1 {
+    background-color: #181a1b;
+    border-bottom: solid 2px #2c2c2c; }
   .contenedor-store .productos {
     background-color: #181a1b; }
     .contenedor-store .productos .productos-carta {
@@ -158,9 +176,9 @@
 
 .contenedor {
   display: grid;
-  grid-template-areas: "navbar navbar navbar navbar" "espacio1 seccion1 seccion1 espacio2" "espacio1 seccion2 seccion3 espacio2" "pie pie pie pie";
+  grid-template-areas: "navbar navbar navbar navbar" "encabezado encabezado encabezado encabezado" "espacio1 seccion1 seccion1 espacio2" "espacio1 seccion2 seccion3 espacio2" "pie pie pie pie";
   grid-template-columns: 1fr 5fr 5fr 1fr;
-  grid-template-rows: 2fr 5fr 5fr 1fr;
+  grid-template-rows: 2fr 1.5fr 5fr 5fr 1fr;
   width: 100%;
   height: 100vh;
   grid-gap: 5px; }
@@ -188,6 +206,12 @@
         .contenedor header .lista-header li:hover {
           padding-top: 13px;
           padding-bottom: 13px; }
+  .contenedor h1 {
+    grid-area: encabezado;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 20px; }
 
 @keyframes animacion {
   0% {
@@ -209,7 +233,7 @@
     animation-name: animacion;
     animation-duration: 0.7s;
     animation-delay: 0s; }
-  .contenedor .seccion2 {
+  .contenedor .seccion2, .contenedor .seccion2-m {
     display: flex;
     grid-area: seccion2;
     width: 98%;
@@ -223,7 +247,7 @@
     animation-name: animacion;
     animation-duration: 0.7s;
     animation-delay: 0s; }
-  .contenedor .seccion3 {
+  .contenedor .seccion3, .contenedor .seccion3-m {
     display: flex;
     grid-area: seccion3;
     width: 98%;
@@ -247,9 +271,9 @@
 
 .contenedor-store {
   display: grid;
-  grid-template-areas: "navbar navbar navbar" "filtros buscador publicidad" "filtros productos publicidad" "pie pie pie";
+  grid-template-areas: "navbar navbar navbar" "h1 h1 h1" "filtros buscador publicidad" "filtros productos publicidad" "pie pie pie";
   grid-template-columns: 4fr 10fr 2fr;
-  grid-template-rows: 17vh 10vh auto auto;
+  grid-template-rows: 17vh 12vh 10vh auto auto;
   width: 100%;
   height: 100%;
   grid-gap: 0px; }
@@ -278,6 +302,11 @@
         .contenedor-store header .lista-header li:hover {
           padding-top: 13px;
           padding-bottom: 13px; }
+  .contenedor-store h1 {
+    display: flex;
+    grid-area: h1;
+    justify-items: center;
+    align-items: center; }
   .contenedor-store .productos {
     grid-area: productos;
     display: flex;
@@ -363,6 +392,8 @@
     width: 100%;
     height: 100vh;
     grid-gap: 0px; }
+    .contenedor h1 {
+      display: none; }
     .contenedor footer {
       display: none;
       height: 0px;
@@ -385,7 +416,7 @@
       font-size: 55px;
       border-radius: 0px;
       font-weight: bolder; }
-    .contenedor .seccion2 {
+    .contenedor .seccion2, .contenedor .seccion2-m {
       background-color: #ffbc9d;
       display: flex;
       grid-area: seccion2;
@@ -405,7 +436,7 @@
       font-size: 40px;
       border-radius: 0px;
       font-weight: bolder; }
-    .contenedor .seccion3 {
+    .contenedor .seccion3, .contenedor .seccion3-m {
       background-color: #E5D2C4;
       display: flex;
       grid-area: seccion3;

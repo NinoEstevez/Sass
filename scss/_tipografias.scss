@@ -16,6 +16,12 @@ $mulish: 'Mulish', cursive;
         }
     }
 
+    h1 {
+
+        font-family: $anek;
+
+    }
+
         .seccion1 {
 
             font-size: 5vw;
@@ -61,7 +67,15 @@ $mulish: 'Mulish', cursive;
         }
     }
         
-    
+    h1 {
+
+        color: white;
+        font-family: $anek;
+        padding-left: 20px;
+        font-size: x-large;
+
+    }
+
     .productos {
 
         .productos-header {

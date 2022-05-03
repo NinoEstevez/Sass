@@ -15,6 +15,26 @@ $marronT: #cfa67dda;
 $rosaT: #ffbc9dce; 
 $nudeT: #e5d2c4dc;
 
+
+$mapafondo: (
+    
+oscuro:#181a1b,
+claro: #e0e0e0,
+intermedio: #474747
+
+);
+
+@mixin seccion1-2($colorFuente, $noneD, $borderR) {
+
+    color: $colorFuente;
+    text-decoration: $noneD;
+    border-radius: $borderR;
+
+
+};
+    
+
+
 .contenedor {
 
     background-image: url(/images/fondo.png);
@@ -60,12 +80,19 @@ $nudeT: #e5d2c4dc;
         }
     }
 
+    h1 {
+
+        background-color: rgba(255, 255, 255, 0.85);
+
+
+    }
+
         .seccion1 {
 
             background-color: $marronT;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+
+            @include seccion1-2(white, none, 50px);
+
             transition: all 0.3s;
 
 
@@ -81,9 +108,9 @@ $nudeT: #e5d2c4dc;
         .seccion2 {
 
             background-color: $f1t;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+
+            @include seccion1-2(white, none, 50px);
+
             transition: all 0.3s;
 
 
@@ -93,12 +120,26 @@ $nudeT: #e5d2c4dc;
             
             }
         }
+
+
+        .seccion2-m {
+
+            @extend .seccion2;
+            
+            &:hover {
+
+                background-color: map-get($mapafondo, oscuro);
+
+            }
+
+        }
+
             .seccion3 {
              
                 background-color: $f1t;
-                color: white;           
-                text-decoration: none;
-                border-radius: 5px;
+
+                @include seccion1-2(white, none, 50px);
+
                 transition: all 0.3s;
 
             
@@ -107,6 +148,18 @@ $nudeT: #e5d2c4dc;
                     background-color: $nude;
                 
                 }
+            }
+
+            .seccion3-m {
+
+                @extend .seccion3;
+                
+                &:hover {
+    
+                    background-color: map-get($mapafondo, oscuro);
+    
+                }
+    
             }
         
     
@@ -123,7 +176,7 @@ $nudeT: #e5d2c4dc;
 
 .contenedor-store {
 
-    background-color: #181a1b;
+    background-color: map-get($mapafondo, oscuro);
 
     header {
 
@@ -162,6 +215,13 @@ $nudeT: #e5d2c4dc;
             }
         
         }
+    }
+
+    h1 {
+
+        background-color: map-get($mapafondo, oscuro);
+        border-bottom: solid 2px #2c2c2c;
+
     }
 
     .productos {
